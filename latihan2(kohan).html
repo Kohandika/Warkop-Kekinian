@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warkop Kekinian</title>
+    <link rel="icon" type="images" href="images/logo warung kopi.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .content {
+            margin: 20px;
+        }
+        .menu, .form-section {
+            margin-top: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        .highlight {
+            background-color: #ffe6e6;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-media img {
+            width: 24px;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Warkop Kekinian</h1>
+    <p>Nikmati ngopi dan ngobrol asyik setiap hari!</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservasi">Reservasi</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+
+    <!-- Menu Section -->
+    <div id="menu" class="menu">
+        <h2>Menu Warkop</h2>
+        <table>
+            <tr class="highlight">
+                <th>Nama Menu</th>
+                <th>Kategori</th>
+                <th>Harga</th>
+            </tr>
+            <tr>
+                <td>Es Kopi Susu</td>
+                <td>Minuman</td>
+                <td>Rp 25.000</td>
+            </tr>
+            <tr>
+                <td>Roti Bakar Coklat</td>
+                <td>Makanan</td>
+                <td>Rp 20.000</td>
+            </tr>
+            <tr class="highlight">
+                <td>Mie Goreng Spesial</td>
+                <td>Makanan</td>
+                <td>Rp 30.000</td>
+            </tr>
+            <tr>
+                <td>Teh Tarik</td>
+                <td>Minuman</td>
+                <td>Rp 18.000</td>
+            </tr>
+            <tr>
+                <td>Wedang Jahe</td>
+                <td>Minuman</td>
+                <td>Rp 20.000</td>
+            </tr>
+            <tr>
+                <td>Es Lemon Tea</td>
+                <td>Minuman</td>
+                <td>Rp 18.000</td>
+            </tr>
+            <tr>
+                <td>Es Kelapa Muda</td>
+                <td>Minuman</td>
+                <td>Rp 22.000</td>
+            </tr>
+            <tr class="highlight">
+                <td>Americano (Hot/Ice)</td>
+                <td>Minuman</td>
+                <td>Rp 22.000</td>
+            </tr>
+            <tr>
+                <td>Cappuccino (Hot/Ice)</td>
+                <td>Minuman</td>
+                <td>Rp 30.000</td>
+            </tr>
+            <tr>
+                <td>Tahu Crispy</td>
+                <td>Makanan</td>
+                <td>Rp 12.000</td>
+            </tr>
+            <tr>
+                <td>Pisang Goreng Coklat Keju</td>
+                <td>Makanan</td>
+                <td>Rp 18.000</td>
+            </tr>
+            <tr>
+                <td>Cireng Bumbu Rujak</td>
+                <td>Makanan</td>
+                <td>Rp 15.000</td>
+            </tr>
+            <tr>
+                <td>Kentang Goreng + Saus Keju</td>
+                <td>Makanan</td>
+                <td>Rp 20.000</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Reservasi Section -->
+    <div id="reservasi" class="form-section">
+        <h2>Reservasi Meja</h2>
+        <form action="#" method="POST">
+            <label for="name">Nama:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="date">Tanggal Reservasi:</label><br>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="time">Jam Reservasi:</label><br>
+            <input type="time" id="time" name="time" required><br><br>
+
+            <label for="message">Pesanan:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit">Kirim Reservasi</button>
+        </form>
+    </div>
+
+    <!-- Kontak Section -->
+    <div id="kontak">
+        <h2>Kontak Kami</h2>
+        <ul>
+            <li><strong>Alamat:</strong> Jl. Sawi No. 12, Tangsel</li>
+            <li><strong>Telepon:</strong> 0858-9472-6461</li>
+            <li><strong>Email:</strong> info@warkopkekinian.com</li>
+        </ul>
+    </div>
+
+<footer>
+    <p>&copy; 2024 Warkop Kekinian. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
